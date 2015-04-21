@@ -20,3 +20,14 @@ Research method. Discuss how you arrived at your answer.
 Related work. Compare your answer with other contributions.
 
 Of course, there is only limited time to work on your research. We expect a brief report, of just a couple of pages (in principle no more than 10 pages), and a short presentation (around 10 - 15 minutes).
+
+
+## Research Projects
+Generic program construction
+Generic coverage
+Generic program equality (under alpha-conversion, …), and program diff
+Semantics of effects
+Verified compilers
+Implementing a memory bank in PiWare
+The Gilbreath Trick
+A verified functional pearl

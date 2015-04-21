@@ -1,5 +1,5 @@
 
-Required Reading
+## Required Reading
 
 James Chapman and Ulf Norell, Dependently typed programming in Agda
 Johan Jeuring, Sean Leather, José Pedro Magalhães and Alexey Rodriguez. Libraries for generic programming in Haskell (Sections 1 - 5).
@@ -9,14 +9,14 @@ Emacs cheatsheet
 Agda keyboard shortcuts
 Writing Unicode characters
 
-Background Reading
+## Background Reading
 
 Benjamin Pierce; Types and Programming Languages
 Robert Harper; Practical Foundations of Programming Languages
 José Pedro Rodrigues Magalhães; A Formal Comparison of Approaches to Datatype-Generic Programming
 Thierry Coquand; A normalization proof for Gödel's System T.
 
-Research Papers
+## Research Papers
 John Launchbury; A natural semantics for Lazy Evaluation
 Jeremy Gibbons, Graham Hutton, Thorsten Altenkirch; When is a function a fold unfold
 Erik Meijer, Maarten Fokkinga, Ross Patterson; Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire
@@ -38,12 +38,3 @@ Manuel Chakravarty, Gabriela Keller, Simon Peyton Jones: Associated type synonym
 Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, and Simon Marlow: Associated Types with Class
 ... if you have any particular topic that you'd like to know more about, let us know and we'd be happy to suggest relevant papers.
 
-Research Projects
-Generic program construction
-Generic coverage
-Generic program equality (under alpha-conversion, …), and program diff
-Semantics of effects
-Verified compilers
-Implementing a memory bank in PiWare
-The Gilbreath Trick
-A verified functional pearl
