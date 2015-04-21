@@ -1,0 +1,17 @@
+---
+title: Theory of Programming and Types
+layout: default
+---
+
+### Latest news
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <em> {{ post.date | date_to_string }} </em> <br>
+      {{ post.content }}
+    </li>
+  {% endfor %}
+</ul>
+
+
