@@ -32,7 +32,7 @@ Of course, there is only limited time to work on your research. We expect a brie
 Here are a few brief project ideas. If you're interested in any particular topic, get in touch.
 
 * Generic program construction
-* Generic coverage
+* Generic datatype coverage
 * Generic program equality (under alpha-conversion, …), and program diff
 * Semantics of effects
 * Verified compilers
