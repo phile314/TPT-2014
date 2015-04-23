@@ -42,6 +42,7 @@ layout: default
 * Daniel Marino, Todd Millstein; [A Generic Type-and-Effect System](http://www.cs.ucla.edu/~todd/research/tldi09.pdf)
 * Manuel Chakravarty, Gabriela Keller, Simon Peyton Jones; [Associated type synonyms](http://dl.acm.org/citation.cfm?id=1086397)
 * Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, and Simon Marlow; [Associated Types with Class](https://www.cse.unsw.edu.au/~chak/papers/CKPM05.html)
+* Conor McBride, [A polynomial testing principle](https://personal.cis.strath.ac.uk/conor.mcbride/PolyTest.pdf)
 
 ... if you have any particular topic that you'd like to know more about, let us know and we'd be happy to suggest relevant papers.
 
