@@ -8,6 +8,7 @@ layout: default
 * James Chapman and Ulf Norell, [Dependently typed programming in Agda](http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf)
 * Johan Jeuring, Sean Leather, José Pedro Magalhães and Alexey Rodriguez. [Libraries for generic programming in Haskell (Sections 1 - 5).](http://www.staff.science.uu.nl/~jeuri101/homepage/Publications/afp2008.pdf)
 
+
 ## Using Agda
 
 * [Emacs cheatsheet](http://refcards.com/docs/gildeas/gnu-emacs/emacs-refcard-a4.pdf)
@@ -16,10 +17,11 @@ layout: default
 
 ## Background Reading
 
+* Philip Wadler, [Propositions as Types](http://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf)
 * Benjamin Pierce; Types and Programming Languages
 * Robert Harper; Practical Foundations of Programming Languages
-* José Pedro Rodrigues Magalhães; [A Formal Comparison of Approaches to Datatype-Generic Programming](http://dreixel.net/research/pdf/fcadgp.pdf)
 * Thierry Coquand; [A normalization proof for Gödel's System T](http://www.cse.chalmers.se/~coquand/norm.ps)
+* José Pedro Rodrigues Magalhães; [A Formal Comparison of Approaches to Datatype-Generic Programming](http://dreixel.net/research/pdf/fcadgp.pdf)
 
 ## Research Papers
 
