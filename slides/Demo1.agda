@@ -1,4 +1,4 @@
-module Demo where
+module Demo1 where
 
 data Bool : Set where
   True : Bool
