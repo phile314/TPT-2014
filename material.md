@@ -29,9 +29,10 @@ layout: default
 * Jeremy Gibbons, Graham Hutton, Thorsten Altenkirch; [When is a function a fold or a unfold](http://www.cs.nott.ac.uk/~gmh/when.pdf), Victor Miraldo and Olli Linna
 * Erik Meijer, Maarten Fokkinga, Ross Patterson; [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 * Rod Burstall; [Proving properties of programs by structural induction](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Burstall.pdf)
-* Jean-Louis Krivine, [Call-by-name lambda-calculus machine](http://www.pps.univ-paris-diderot.fr/~krivine/articles/lazymach.pdf) or alternatively, [From mathematics to Abstract Machine: A formal derivation of an executable Krivine machine](http://eptcs.web.cse.unsw.edu.au/paper.cgi?MSFP2012.10)
+* Jean-Louis Krivine, [Call-by-name lambda-calculus machine](http://www.pps.univ-paris-diderot.fr/~krivine/articles/lazymach.pdf) Sophie Huiberts & Sije Harkema
+or alternatively, [From mathematics to Abstract Machine: A formal derivation of an executable Krivine machine](http://eptcs.web.cse.unsw.edu.au/paper.cgi?MSFP2012.10)
 * Nils Anders Danielsson; [Operational semantics using the partiality monad](http://www.cse.chalmers.se/~nad/publications/danielsson-semantics-partiality-monad.pdf)
-* Robby Findler and Matthias Felleisen; [Contracts for Higher-order functions](http://www.ccs.neu.edu/racket/pubs/NU-CCIS-02-05.pdf) or alternatively Ralf Hinze, Johan Jeuring, Andres Löh [Typed Contracts for Functional Programming](http://www.andres-loeh.de/Contracts.html)
+* Robby Findler and Matthias Felleisen; [Contracts for Higher-order functions](http://www.ccs.neu.edu/racket/pubs/NU-CCIS-02-05.pdf) or alternatively Ralf Hinze, Johan Jeuring, Andres Löh [Typed Contracts for Functional Programming](http://www.andres-loeh.de/Contracts.html), Mark Lekkerkerker and Falco Peijnenburg
 * Mark Jones; [First-class Polymorphism with Type Inference](http://web.cecs.pdx.edu/~mpj/pubs/popl97-fcp.pdf)
 * Phil Wadler; [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf)
 * Niki Vazou et al; [Refinement types for Haskell](http://goto.ucsd.edu/~rjhala/papers/refinement_types_for_haskell.pdf)
