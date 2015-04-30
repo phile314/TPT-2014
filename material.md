@@ -27,7 +27,7 @@ layout: default
 
 * John Launchbury; [A natural semantics for Lazy Evaluation](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Launchbury.pdf)
 * Jeremy Gibbons, Graham Hutton, Thorsten Altenkirch; [When is a function a fold or a unfold](http://www.cs.nott.ac.uk/~gmh/when.pdf), Victor Miraldo and Olli Linna
-* Erik Meijer, Maarten Fokkinga, Ross Patterson; [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+* Erik Meijer, Maarten Fokkinga, Ross Patterson; [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf), Rob Spoel and Daniël Heres
 * Rod Burstall; [Proving properties of programs by structural induction](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Burstall.pdf)
 * Jean-Louis Krivine, [Call-by-name lambda-calculus machine](http://www.pps.univ-paris-diderot.fr/~krivine/articles/lazymach.pdf) Sophie Huiberts & Sije Harkema
 or alternatively, [From mathematics to Abstract Machine: A formal derivation of an executable Krivine machine](http://eptcs.web.cse.unsw.edu.au/paper.cgi?MSFP2012.10)
