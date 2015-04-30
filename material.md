@@ -42,7 +42,7 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 * Chris Casinghino Vilhelm Sjöberg Stephanie Weirich; [Combining Proofs and Programs in a Dependently Typed Language](http://www.seas.upenn.edu/~ccasin/papers/combining-TR.pdf)
 * Edwin Brady; [Dependently Typed Meta-Programming](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.7073&rep=rep1&type=pdf)
 * Andres Löh, Conor McBride, Wouter Swierstra; [A tutorial implementation of a dependently typed lambda calculus](http://www.andres-loeh.de/LambdaPi/LambdaPi.pdf)
-* Daniel Marino, Todd Millstein; [A Generic Type-and-Effect System](http://www.cs.ucla.edu/~todd/research/tldi09.pdf)
+* Daniel Marino, Todd Millstein; [A Generic Type-and-Effect System](http://www.cs.ucla.edu/~todd/research/tldi09.pdf), Eduard van der Bent & Bert de Vreugd
 * Manuel Chakravarty, Gabriela Keller, Simon Peyton Jones; [Associated type synonyms](http://dl.acm.org/citation.cfm?id=1086397)
 * Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, and Simon Marlow; [Associated Types with Class](https://www.cse.unsw.edu.au/~chak/papers/CKPM05.html)
 * Conor McBride, [A polynomial testing principle](https://personal.cis.strath.ac.uk/conor.mcbride/PolyTest.pdf)
