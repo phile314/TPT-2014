@@ -34,7 +34,7 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 * Nils Anders Danielsson; [Operational semantics using the partiality monad](http://www.cse.chalmers.se/~nad/publications/danielsson-semantics-partiality-monad.pdf)
 * Robby Findler and Matthias Felleisen; [Contracts for Higher-order functions](http://www.ccs.neu.edu/racket/pubs/NU-CCIS-02-05.pdf) or alternatively Ralf Hinze, Johan Jeuring, Andres Löh [Typed Contracts for Functional Programming](http://www.andres-loeh.de/Contracts.html), Mark Lekkerkerker and Falco Peijnenburg
 * Mark Jones; [First-class Polymorphism with Type Inference](http://web.cecs.pdx.edu/~mpj/pubs/popl97-fcp.pdf)
-* Phil Wadler; [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf)
+* Phil Wadler; [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf), Renate Eilers and Yfke Dulek
 * Niki Vazou et al; [Refinement types for Haskell](http://goto.ucsd.edu/~rjhala/papers/refinement_types_for_haskell.pdf)
 * Vazou, Rondon and Jhala; [Abstract Reﬁnement Types](http://goto.ucsd.edu/~rjhala/liquid/abstract_refinement_types.pdf)
 * Edsko de Vries, Rinus Plasmeijer, David Abrahamson; [Uniqueness Typing Simplified](https://www.cs.tcd.ie/~devriese/pub/ifl07-paper.pdf)
