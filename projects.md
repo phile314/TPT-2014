@@ -39,3 +39,4 @@ Here are a few brief project ideas. If you're interested in any particular topic
 * Implementing a memory bank in PiWare
 * The Gilbreath Trick
 * A verified functional pearl
+* Using reflection to write a library for generic programming in Agda
