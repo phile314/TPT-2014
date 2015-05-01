@@ -25,7 +25,7 @@ layout: default
 
 ## Research Papers
 
-* John Launchbury; [A natural semantics for Lazy Evaluation](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Launchbury.pdf)
+* John Launchbury; [A natural semantics for Lazy Evaluation](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Launchbury.pdf), Niels Steenbergen and Andreas Franz
 * Jeremy Gibbons, Graham Hutton, Thorsten Altenkirch; [When is a function a fold or a unfold](http://www.cs.nott.ac.uk/~gmh/when.pdf), Victor Miraldo and Olli Linna
 * Erik Meijer, Maarten Fokkinga, Ross Patterson; [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf), Rob Spoel and Daniël Heres
 * Rod Burstall; [Proving properties of programs by structural induction](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Burstall.pdf)
