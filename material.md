@@ -33,7 +33,7 @@ layout: default
 or alternatively, [From mathematics to Abstract Machine: A formal derivation of an executable Krivine machine](http://eptcs.web.cse.unsw.edu.au/paper.cgi?MSFP2012.10)
 * Nils Anders Danielsson; [Operational semantics using the partiality monad](http://www.cse.chalmers.se/~nad/publications/danielsson-semantics-partiality-monad.pdf)
 * Robby Findler and Matthias Felleisen; [Contracts for Higher-order functions](http://www.ccs.neu.edu/racket/pubs/NU-CCIS-02-05.pdf) or alternatively Ralf Hinze, Johan Jeuring, Andres Löh [Typed Contracts for Functional Programming](http://www.andres-loeh.de/Contracts.html), Mark Lekkerkerker and Falco Peijnenburg
-* Mark Jones; [First-class Polymorphism with Type Inference](http://web.cecs.pdx.edu/~mpj/pubs/popl97-fcp.pdf)
+* Mark Jones; [First-class Polymorphism with Type Inference](http://web.cecs.pdx.edu/~mpj/pubs/popl97-fcp.pdf), Frank Dedden and Rick Klomp
 * Phil Wadler; [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf), Renate Eilers and Yfke Dulek
 * Niki Vazou et al; [Refinement types for Haskell](http://goto.ucsd.edu/~rjhala/papers/refinement_types_for_haskell.pdf)
 * Vazou, Rondon and Jhala; [Abstract Reﬁnement Types](http://goto.ucsd.edu/~rjhala/liquid/abstract_refinement_types.pdf)
@@ -41,7 +41,7 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 * Peter Landin; [The next 700 programming languages]()
 * Chris Casinghino Vilhelm Sjöberg Stephanie Weirich; [Combining Proofs and Programs in a Dependently Typed Language](http://www.seas.upenn.edu/~ccasin/papers/combining-TR.pdf)
 * Andres Löh, Conor McBride, Wouter Swierstra; [A tutorial implementation of a dependently typed lambda calculus](http://www.andres-loeh.de/LambdaPi/LambdaPi.pdf)
-* Daniel Marino, Todd Millstein; [A Generic Type-and-Effect System](http://www.cs.ucla.edu/~todd/research/tldi09.pdf)
+* Daniel Marino, Todd Millstein; [A Generic Type-and-Effect System](http://www.cs.ucla.edu/~todd/research/tldi09.pdf), Eduard van der Bent & Bert de Vreugd
 * Manuel Chakravarty, Gabriela Keller, Simon Peyton Jones; [Associated type synonyms](http://dl.acm.org/citation.cfm?id=1086397)
 * Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, and Simon Marlow; [Associated Types with Class](https://www.cse.unsw.edu.au/~chak/papers/CKPM05.html)
 * Conor McBride, [A polynomial testing principle](https://personal.cis.strath.ac.uk/conor.mcbride/PolyTest.pdf)
