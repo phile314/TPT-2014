@@ -48,7 +48,6 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 
 ... if you have any particular topic that you'd like to know more about, let us know and we'd be happy to suggest relevant papers.
 
-<<<<<<< HEAD
 ## What we expect from you – as you present a paper
 
 The goal of the reading sessions is to practice with reading, presenting, and analysing research papers. 
