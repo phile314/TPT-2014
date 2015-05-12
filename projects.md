@@ -106,3 +106,37 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
 **Project:** Can you implement these pearls in Agda and prove that they are correct?
 
+#### Datatype refinement (JJ)
+
+* Given a datatype, construct its refinement rules
+
+* Given two values of a datatype, construct a sequence of refinements between them (if possible)
+
+* Develop heuristics to do this relatively fast Fine tune in the context of pretty printing
+
+####￼Datatype coverage (JJ)
+
+* Given a datatype and a number of values of the datatype, how much of the datatype has been covered?
+
+* Can I relate this to Bayesian networks?
+
+####￼Strategy datatypes (JJ)
+
+* Given a strategy for solving a problem, constructing a proof, construct a datatype for representing instances of the strategy
+
+* A generic function with a datatype as result
+
+####￼Datatype equality (JJ)
+
+* Generic equality is used a lot
+* How do I defined generic equality if I have binding constructs in my datatype
+* Can I define generic equality modulo 'theories’ (beta-reduction, eta-reduction, other rewrite rules)
+
+#### Type-based program construction (JJ)
+
+* Djinn implements a decision procedure for intuitionistic propositional calculus
+
+* Cannot deal with recursive types
+
+* Extend the procedure using techniques from generic programming to also generate (some) functions for recursive datatypes
+
