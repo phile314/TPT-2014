@@ -57,17 +57,17 @@ Check out: [Gideon Smeding's MSc thesis](http://gideon.smdng.nl/wp-content/uploa
 
 Given a mini-programming language, interpreter and compiler:
 
-```
-data Expr = Val Int | Add Expr Expr
 
-eval : Expr -> Int
+    data Expr = Val Int | Add Expr Expr
 
-data Instr = PUSH INT | ADD
+    eval : Expr -> Int
 
-compile : Expr -> [Instr]
+    data Instr = PUSH INT | ADD
 
-exec : [Instr] -> Int
-```
+    compile : Expr -> [Instr]
+
+    exec : [Instr] -> Int
+
 
 Graham Hutton's book, *Programming in Haskell*, shows how to prove such a compiler is correct, i.e., executing compiled code is the same as evaluation.
 
