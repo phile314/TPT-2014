@@ -108,35 +108,60 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
 #### Datatype refinement (JJ)
 
-* Given a datatype, construct its refinement rules
+Given a datatype, construct its refinement rules. For example,
 
-* Given two values of a datatype, construct a sequence of refinements between them (if possible)
 
-* Develop heuristics to do this relatively fast Fine tune in the context of pretty printing
+    data Expr = Add Expr Expr
+              | Con Int
+
+    refineAdd = ? ~> Add ? ?
+    refineCon = ? ~> Con ?
+
+
+where a question mark denotes a hole.
+
+Given two values of a datatype, construct a sequence of refinements between them (if possible)
+
+Develop heuristics to do this relatively fast 
+
+Fine tune in the context of pretty printing
+
+This work might be useful in the development of a programming tutor such as [Ask-Elle](http://www.staff.science.uu.nl/~jeuri101/homepage/Publications/CEFP/). Technologies from [generic rewriting](http://www.cs.uu.nl/research/techreps/UU-CS-2010-008.html) might be useful.
 
 ####￼Datatype coverage (JJ)
 
-* Given a datatype and a number of values of the datatype, how much of the datatype has been covered?
+Given a datatype and a number of values of the datatype, how much of the
+datatype has been covered? This requires a type-indexed datatype (or an
+associated type) for storing information in a datatype. The papers on associated
+types listed on the materials page are useful here.
 
-* Can I relate this to Bayesian networks?
+Can I relate this to Bayesian networks?
 
 ####￼Strategy datatypes (JJ)
 
-* Given a strategy for solving a problem, constructing a proof, construct a datatype for representing instances of the strategy
+Given a strategy for solving a problem, constructing a proof, construct a
+datatype for representing instances of the strategy. See [Specifying rewrite
+strategies for interactive
+exercises](http://www.cs.uu.nl/research/techreps/UU-CS-2009-003.html) to find out what strategies look like.
 
-* A generic function with a datatype as result
+The result is a generic function with a datatype as result. Again associated
+types?
 
 ####￼Datatype equality (JJ)
 
-* Generic equality is used a lot
-* How do I defined generic equality if I have binding constructs in my datatype
-* Can I define generic equality modulo 'theories’ (beta-reduction, eta-reduction, other rewrite rules)
+Generic equality is used a lot.
+
+How do I defined generic equality if I have binding constructs in my datatype?
+
+Can I define generic equality modulo 'theories’ (beta-reduction, eta-reduction, other rewrite rules)?
 
 #### Type-based program construction (JJ)
 
-* Djinn implements a decision procedure for intuitionistic propositional calculus
+Djinn implements a decision procedure for intuitionistic propositional calculus
 
-* Cannot deal with recursive types
+Cannot deal with recursive types.
 
-* Extend the procedure using techniques from generic programming to also generate (some) functions for recursive datatypes
+Extend the procedure using techniques from generic programming to also generate (some) functions for recursive datatypes. 
+
+See the paper [Generating generic functions](http://dl.acm.org/authorize.cfm?key=829746) for a related project in which generic programming and Djinn are used .
 
