@@ -31,7 +31,7 @@ Of course, there is only limited time to work on your research. We expect a brie
 
 Here are a few ideas for projects. Feel free to get in touch with the supervisor mentioned for more information
 
-### Semantics of effects (WS)
+#### Semantics of effects (WS)
 
 In the course we have seen how to specify the semantics of mini-programming languages.
 
@@ -43,7 +43,7 @@ Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://resear
 
 
 
-### Semantics of dynamically typed languages (WS)
+#### Semantics of dynamically typed languages (WS)
 
 We have mainly considered *statically typed languages* in our lectures.
 
@@ -53,15 +53,19 @@ Check out: [Gideon Smeding's MSc thesis](http://gideon.smdng.nl/wp-content/uploa
 
 
 
-### Verified compilers (WS)
+#### Verified compilers (WS)
 
 Given a mini-programming language, interpreter and compiler:
 
-```haskell
+```
 data Expr = Val Int | Add Expr Expr
+
 eval : Expr -> Int
+
 data Instr = PUSH INT | ADD
+
 compile : Expr -> [Instr]
+
 exec : [Instr] -> Int
 ```
 
@@ -71,7 +75,7 @@ Graham Hutton's book, *Programming in Haskell*, shows how to prove such a compil
 
 
 
-### Memory bank in PiWare (WS)
+#### Memory bank in PiWare (WS)
 
 PiWare is a DSL for hardware description implemented in Agda.
 
@@ -81,7 +85,7 @@ We have implemented several examples of circuits – but most of these are combi
 
 
 
-### Reflection and generic programming (WS)
+#### Reflection and generic programming (WS)
 
 There are many papers explaining how to use *universes* to describe a collection of types in Agda.
 
@@ -92,8 +96,7 @@ Recently Agda's reflection mechanism ('Template Agda') has been extended, making
 **Project:** Write a small library for generic programming in Agda, automating the conversion functions.
 
 
-
-### Functional Pearls in Agda (WS)
+#### Functional Pearls in Agda (WS)
 
 There is a large collection of 'functional pearls' – short examples of an elegant function solution to a (seemingly) difficult problem:
 
