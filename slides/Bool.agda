@@ -57,17 +57,6 @@ cond vfalse v2 v3 = v3
 ⟦ false ⟧ = vfalse
 ⟦ if t then t₁ else t₂ ⟧ = cond ⟦ t ⟧ ⟦ t₁ ⟧ ⟦ t₂ ⟧
 
-
-
-
-
-
-
-
-
-
-
-
 -------------------------------------------------------------------------------
 -- Small-step semantics.
 --------------------------------------------------------------------------------
@@ -124,16 +113,6 @@ anotherExample = if ex then ex else ex
 
 evalAnotherExample : Step anotherExample false
 evalAnotherExample = {!!}
-
-
-
-
-
-
-
-
-
-
 
 ------------------------------------------------------------------------
 -- Sequences of small steps.
@@ -192,9 +171,10 @@ termination false = terminates vfalse Nil
 termination (if t then t₁ else t₂) with termination t
 termination (if t then t₁ else t₂) | terminates vtrue x with termination t₁
 termination (if t then t₁ else t₂) | terminates vtrue steps1 | terminates v steps2 = 
-  terminates v ( E-If-Steps steps1 ++ Cons E-If-True steps2)
-termination (if t then t₁ else t₂) | terminates vfalse x = {!!}
-
+  terminates v (E-If-Steps steps1 ++ Cons E-If-True steps2)
+termination (if t then t₁ else t₂) | terminates vfalse x with termination t₂
+termination (if t then t₁ else t₂) | terminates vfalse steps1 | terminates v steps2 = 
+  terminates v (E-If-Steps steps1 ++ Cons E-If-False steps2)
 
 
 ------------------------------------------------------------------------
@@ -218,7 +198,7 @@ big-to-small : ∀ {t v} → t ⇓ v → Steps t ⌜ v ⌝
 big-to-small EvalTrue = Nil
 big-to-small EvalFalse = Nil
 big-to-small (EvalIfTrue p p₁) = E-If-Steps (big-to-small p) ++ [ E-If-True ] ++ big-to-small p₁
-big-to-small (EvalIfFalse p p₁) = {!!}
+big-to-small (EvalIfFalse p p₁) = E-If-Steps (big-to-small p) ++ [ E-If-False ] ++ big-to-small p₁
 
 
 lemma : (v : Value) -> ⌜ v ⌝ ⇓ v
@@ -229,7 +209,7 @@ lemma vfalse = EvalFalse
 small-to-big : (t : Term) -> (v : Value) → Steps t ⌜ v ⌝ → t ⇓ v
 small-to-big .(⌜ v ⌝) v Nil = lemma v
 small-to-big ._ v (Cons E-If-True p) = EvalIfTrue EvalTrue (small-to-big _ _ p)
-small-to-big ._ v (Cons E-If-False p) = {!!}
+small-to-big ._ v (Cons E-If-False p) = EvalIfFalse EvalFalse (small-to-big _ _ p)
 small-to-big ._ v (Cons (E-If-If x) p) = {!!}
 
 --------------------------------------------------------------------------------
