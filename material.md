@@ -48,3 +48,18 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 
 ... if you have any particular topic that you'd like to know more about, let us know and we'd be happy to suggest relevant papers.
 
+## Presenting and reading papers
+
+The goal of the reading sessions is to practice with reading, presenting, and analysing research papers. 
+
+* Present the main problem, results and impact of the paper you picked in 5 to 10 minutes
+* `Read' (walk) through the paper, paying in particular attention to interesting, relevant, questionable, or difficult parts (25 minutes)
+* Involve the class by posing questions, making claims, suggesting alternatives, etc.
+* Make an informed conclusion about the paper, and discuss this with the class (5 to 10 minutes)
+
+Your presentation will be judged using the following criteria:
+
+* Did you clearly present the essence of the problem discussed in the paper, its solution, and its context/impact?
+* Did you analyse the problem, its solution, and its context/impact thoroughly?
+* Did you involve the class in reading the paper?
+* Did you manage time well (in particular: did you manage to read the paper in 45 minutes)?
