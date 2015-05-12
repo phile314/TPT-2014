@@ -31,9 +31,11 @@ Of course, there is only limited time to work on your research. We expect a brie
 
 Here are a few brief project ideas. If you're interested in any particular topic, get in touch.
 
-* Generic program construction
+* Generic datatype refinement
 * Generic datatype coverage
-* Generic program equality (under alpha-conversion, …), and program diff
+* Generic program equality (under alpha-conversion, …)
+* Generic strategy datatypes
+* Generic type-based program construction
 * Semantics of effects
 * Verified compilers
 * Implementing a memory bank in PiWare
