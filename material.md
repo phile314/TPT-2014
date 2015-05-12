@@ -48,3 +48,40 @@ or alternatively, [From mathematics to Abstract Machine: A formal derivation of 
 
 ... if you have any particular topic that you'd like to know more about, let us know and we'd be happy to suggest relevant papers.
 
+## What we expect from you – as you present a paper
+
+If you are responsible for presenting a paper, we expect the following:
+
+* You should read the paper carefully in advance;
+
+* You should be able to sketch the academic context of this paper. When was it written? What work does it cite? What later work cites this paper? What other work did it build upon? What was its research impact?
+
+* At the beginning of the session, you should briefly introduce the paper – what is the paper about and what are the main results.
+
+* After this introduction, you should informally guide us through the paper explaining the details step by step.
+
+* As we read the paper, you should be able to answer any questions from the audience.
+
+* You are responsible for ensuring that we have completed the paper in the available time (35 to 40 minutes), leaving time for further questions.
+
+* You should chair the discussion about the paper, and try to actively engage your fellow students.
+
+* At the end of the session, you should be able to formulate your opinion about the research you have presented.
+
+## What we expect from you – if you attend the reading sessions
+
+* You have read the paper and understand what it is about.
+
+* You have formulated careful questions about any technical issues that you did not understand.
+
+* You actively engage in the discussion about the paper, asking the presentors questions or challenging their interpretation of the work.
+
+* Don't just sit back and let it wash over you – this is an opportunity to learn a great deal!
+
+
+
+
+
+
+
+
