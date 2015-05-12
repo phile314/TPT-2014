@@ -29,16 +29,77 @@ Of course, there is only limited time to work on your research. We expect a brie
 
 ## Research Projects
 
-Here are a few brief project ideas. If you're interested in any particular topic, get in touch.
+Here are a few ideas for projects. Feel free to get in touch with the supervisor mentioned for more information
 
-* Generic datatype refinement
-* Generic datatype coverage
-* Generic program equality (under alpha-conversion, …)
-* Generic strategy datatypes
-* Generic type-based program construction
-* Semantics of effects
-* Verified compilers
-* Implementing a memory bank in PiWare
-* The Gilbreath Trick
-* A verified functional pearl
-* Using reflection to write a library for generic programming in Agda
+### Semantics of effects (WS)
+
+In the course we have seen how to specify the semantics of mini-programming languages.
+
+Adding *effects*, such as mutable state or concurrency, greatly complicates the definitions of such semantics.
+
+**Project:** define the semantics of a language with effects (in different styles). What can you prove?
+
+Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://research.microsoft.com/en-us/um/people/simonpj/papers/marktoberdorf/mark.pdf) for examples.
+
+
+
+### Semantics of dynamically typed languages (WS)
+
+We have mainly considered *statically typed languages* in our lectures.
+
+**Project:** How hard is it to formalise the semantics of dynamically typed languages, such as Python?
+
+Check out: [Gideon Smeding's MSc thesis](http://gideon.smdng.nl/wp-content/uploads/thesis.pdf), describing the semantics of Python
+
+
+
+### Verified compilers (WS)
+
+Given a mini-programming language, interpreter and compiler:
+
+```haskell
+data Expr = Val Int | Add Expr Expr
+eval : Expr -> Int
+data Instr = PUSH INT | ADD
+compile : Expr -> [Instr]
+exec : [Instr] -> Int
+```
+
+Graham Hutton's book, *Programming in Haskell*, shows how to prove such a compiler is correct, i.e., executing compiled code is the same as evaluation.
+
+**Project:** Extend the source language/compiler/target language with new features.
+
+
+
+### Memory bank in PiWare (WS)
+
+PiWare is a DSL for hardware description implemented in Agda.
+
+We have implemented several examples of circuits – but most of these are combinational.
+
+**Project:** How can we implement and reason about circuits with feedback loops, such as a memory bank?
+
+
+
+### Reflection and generic programming (WS)
+
+There are many papers explaining how to use *universes* to describe a collection of types in Agda.
+
+These papers typicall avoid the problem of converting a data type to its representation and back.
+
+Recently Agda's reflection mechanism ('Template Agda') has been extended, making it possible to automate this.
+
+**Project:** Write a small library for generic programming in Agda, automating the conversion functions.
+
+
+
+### Functional Pearls in Agda (WS)
+
+There is a large collection of 'functional pearls' – short examples of an elegant function solution to a (seemingly) difficult problem:
+
+  * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf)
+  * [The Gilbreath shuffle](http://yquem.inria.fr/~huet/PUBLIC/shuffle2.pdf)
+  * ...
+
+**Project:** Can you implement these pearls in Agda and prove that they are correct?
+
