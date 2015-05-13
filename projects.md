@@ -108,6 +108,8 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
 #### Datatype refinement (JJ)
 
+Olli Linna and Rick Klomp
+
 Given a datatype, construct its refinement rules. For example,
 
 
