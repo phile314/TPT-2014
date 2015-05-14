@@ -53,7 +53,7 @@ Check out: [Gideon Smeding's MSc thesis](http://gideon.smdng.nl/wp-content/uploa
 
 
 
-#### Verified compilers (WS)
+#### Verified compilers (WS) - Rob Spoel, Daniël Heres
 
 Given a mini-programming language, interpreter and compiler:
 
