@@ -75,7 +75,7 @@ Graham Hutton's book, *Programming in Haskell*, shows how to prove such a compil
 
 
 
-#### Memory bank in PiWare (WS)
+#### Memory bank in PiWare (WS) - Frank Dedden and Sije Harkema
 
 PiWare is a DSL for hardware description implemented in Agda.
 
