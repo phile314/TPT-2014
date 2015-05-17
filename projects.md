@@ -44,6 +44,7 @@ Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://resear
 
 
 #### Semantics of dynamically typed languages (WS)
+Falco Peijnenburg, Mark Lekkerkerker
 
 We have mainly considered *statically typed languages* in our lectures.
 
