@@ -150,6 +150,7 @@ The result is a generic function with a datatype as result. Again associated
 types?
 
 ####￼Datatype equality (JJ)
+Erik van der Kramer en Morten Asscheman
 
 Generic equality is used a lot.
 
