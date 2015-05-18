@@ -47,3 +47,8 @@ these operations cause an overflow, wrap around from the top.
   fellow student's work. Be very careful when editing this file!
 
 * Create a pull request with these three changes.
+
+# Exercise 1
+
+There are 9 parts to the exercise. Each part is worth 1 point. The
+total score is the sum of these parts + 1.
