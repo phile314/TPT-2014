@@ -204,8 +204,7 @@ SubListAntiSym = {!!}
 -- Define the constructors of a data type 
 data LEQ : Nat -> Nat -> Set where
 
--- (Alternative correct definitions exist - this one is the easiest to
--- work with for the rest of this exercise)
+-- (Alternative correct definitions exist)
 
 leqRefl : (n : Nat) -> LEQ n n
 leqRefl = {!!}
@@ -231,7 +230,7 @@ leq<= = {!!}
 <=leq = {!!} 
 
 ----------------------
------ Exercise 7 -----
+----- Exercise 8 -----
 ----------------------
 
 -- We can define negation as follows
