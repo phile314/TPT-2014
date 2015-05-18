@@ -101,7 +101,7 @@ Recently Agda's reflection mechanism ('Template Agda') has been extended, making
 
 There is a large collection of 'functional pearls' – short examples of an elegant function solution to a (seemingly) difficult problem:
 
-  * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf)
+  * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf) - Marcell van Geest & Wilco Kusee
   * [The Gilbreath shuffle](http://yquem.inria.fr/~huet/PUBLIC/shuffle2.pdf)
   * ...
 
