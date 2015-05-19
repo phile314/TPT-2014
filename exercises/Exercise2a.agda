@@ -1,5 +1,25 @@
 
-module BoolNat where
+module Exercise2a where
+
+--------------------------------------------------------------------------------
+--Instructions--
+{-
+Fill in the holes below
+
+Extend the language with tuples, fst, and snd
+
+Complete the proofs again
+
+You may want to check Chapter 11.7 of Pierce's book to see how he defines
+the syntax, semantics and types for tuples.
+
+Hint: in many of the lemmas, I have made all arguments
+explicit. This way I don't give away too much information about how
+to do your induction. In many cases, you can make many of these
+arguments implicit. It's a good idea to do so -- it'll make your
+lemmas much more readable.
+-}
+--------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
 ----------------------                 Prelude             --------------------
@@ -82,18 +102,21 @@ cond : forall {ty} -> Value BOOL → Value ty → Value ty → Value ty
 cond vtrue v2 v3 = v2
 cond vfalse v2 v3 = v3
 
+vsucc : Value NAT -> Value NAT
+vsucc (vnat x) = vnat (Succ x)
+
+viszero : Value NAT -> Value BOOL
+viszero (vnat Zero) = vtrue
+viszero (vnat (Succ x)) = vfalse
+
 -- Evaluation function.
 ⟦_⟧ : forall {ty} -> Term ty  → Value ty
 ⟦ true ⟧ = vtrue
 ⟦ false ⟧ = vfalse
 ⟦ if t then t₁ else t₂ ⟧ = cond ⟦ t ⟧ ⟦ t₁ ⟧ ⟦ t₂ ⟧
 ⟦ zero ⟧ = vnat Zero
-⟦ succ k ⟧ with ⟦ k ⟧
-⟦ succ k ⟧ | vnat x = vnat (Succ x)
-⟦ iszero t ⟧ with ⟦ t ⟧
-⟦ iszero t ⟧ | vnat Zero = vtrue
-⟦ iszero t ⟧ | vnat (Succ x) = vfalse
-
+⟦ succ k ⟧ = vsucc ⟦ k ⟧
+⟦ iszero t ⟧ = viszero ⟦ t ⟧
 
 -- What can we do to define a denotational semantics?
 --   Add types!
@@ -239,12 +262,141 @@ mutual
     Right (Reduces (E-IsZeroSucc {vnat x}))
   progress (iszero t) | Right (Reduces step) = Right (Reduces (E-IsZero step))
 
--- TODO
---   * prove uniqueness of normal forms
---   * prove termination
---   * define a big step semantics
---   * prove various semantics equivalent
 
+
+--------------------------------------------------------------------------------
+-- Sequences of small steps.
+--------------------------------------------------------------------------------
+
+-- A sequence of steps that can be applied in succession.
+data Steps {ty : Type} : Term ty → Term ty → Set where
+  Nil : forall {t} -> Steps t t
+  Cons : forall {t1 t2 t3} -> Step t1 t2 -> Steps t2 t3 -> Steps t1 t3
+
+-- Single-step sequence.
+[_] : ∀ {ty} {t₁ t₂ : Term ty} -> Step t₁ t₂ -> Steps t₁ t₂
+[_] x = Cons x Nil
+  
+-- Concatenation.
+_++_ : ∀ {ty} {t₁ t₂ t₃ : Term ty} → Steps t₁ t₂ → Steps t₂ t₃ → Steps t₁ t₃
+Nil ++ stps' = stps'
+Cons x stps ++ stps' = Cons x (stps ++ stps')
+
+infixr 5 _++_
+
+uniqueness-of-normal-forms :
+  ∀ {ty} {t t₁ t₂ : Term ty} →
+  Steps t t₁ → Steps t t₂ → NF t₁ → NF t₂ → t₁ == t₂
+uniqueness-of-normal-forms Nil Nil nf1 nf2 = refl
+uniqueness-of-normal-forms Nil (Cons x s2) nf1 nf2 = contradiction (nf1 (Reduces x))
+uniqueness-of-normal-forms (Cons x s1) Nil nf1 nf2 = contradiction (nf2 (Reduces x))
+uniqueness-of-normal-forms (Cons x xs) (Cons y ys) nf1 nf2 with deterministic x y 
+uniqueness-of-normal-forms (Cons x xs) (Cons y ys) nf1 nf2 | refl = uniqueness-of-normal-forms xs ys nf1 nf2
+
+
+            
+------------------------------------------------------------------------
+-- Expressing and proving termination.
+
+-- The execution of a term terminates when there exists a step
+-- sequence that evaluates this term to a value.
+data _⇓ {ty : Type} (t : Term ty) : Set where
+  terminates : ∀ v → Steps t (⌜ v ⌝) → t ⇓
+
+-- If t₁ evaluates to t₂, and t₂ terminates, then t₁ terminates as
+-- well.
+prepend-steps : ∀ {ty} {t₁ t₂ : Term ty} →  Steps t₁ t₂  → t₂ ⇓  → t₁ ⇓
+prepend-steps steps (terminates v x₁) = terminates v (steps ++ x₁)
+
+E-If-Steps : ∀ {ty} {t t'} {t1 t2 : Term ty} →
+        Steps t t' →
+        Steps (if t then t1 else t2) (if t' then t1 else t2)
+E-If-Steps Nil = Nil
+E-If-Steps (Cons x steps) = Cons (E-If-If x) (E-If-Steps steps)
+
+E-Succ-Steps : ∀ {t t' : Term NAT} -> 
+        Steps t t' →
+        Steps (succ t) (succ t')
+E-Succ-Steps Nil = Nil
+E-Succ-Steps (Cons x steps) = Cons (E-Succ x) (E-Succ-Steps steps)
+
+E-IsZero-Steps : ∀ {t t' : Term NAT} -> 
+        Steps t t' →
+        Steps (iszero t) (iszero t')
+E-IsZero-Steps Nil = Nil
+E-IsZero-Steps (Cons x steps) = Cons (E-IsZero x) (E-IsZero-Steps steps)
+
+-- All steps terminate.
+termination : ∀ {ty} (t : Term ty) → t ⇓
+termination true = terminates vtrue Nil
+termination false = terminates vfalse Nil
+termination (if t then t₁ else t₂) with termination t
+termination (if t then t₁ else t₂) | terminates vtrue x with termination t₁ 
+termination (if t then t₁ else t₂) | terminates vtrue x₁ | terminates v x = 
+  terminates v (E-If-Steps x₁  ++ [ E-If-True ] ++ x)
+termination (if t then t₁ else t₂) | terminates vfalse x with termination t₂
+termination (if t then t₁ else t₂) | terminates vfalse x₁ | terminates v x = 
+  terminates v (E-If-Steps x₁ ++ [ E-If-False ] ++ x)
+termination zero = terminates (vnat Zero) Nil
+termination (succ t) with termination t
+termination (succ t) | terminates (vnat x) q = terminates (vnat (Succ x)) (E-Succ-Steps q)
+termination (iszero (if t then t₁ else t₂)) with termination t
+termination (iszero (if t then t₁ else t₂)) | terminates vtrue x with termination t₁
+termination (iszero (if t then t₁ else t₂)) | terminates vtrue x₂ | terminates (vnat Zero) x₁ = 
+  terminates vtrue 
+    (E-IsZero-Steps (E-If-Steps x₂ ++ [ E-If-True ]) ++ E-IsZero-Steps x₁ ++ [ E-IsZeroZero ])
+termination (iszero (if t then t₁ else t₂)) | terminates vtrue x₂ | terminates (vnat (Succ x)) x₁ = 
+  terminates vfalse 
+    (E-IsZero-Steps (E-If-Steps x₂ ++ [ E-If-True ]) ++ E-IsZero-Steps x₁ ++ [ E-IsZeroSucc {vnat x} ])
+termination (iszero (if t then t₁ else t₂)) | terminates vfalse x with termination t₂
+termination (iszero (if t then t₁ else t₂)) | terminates vfalse x₂ | terminates (vnat Zero) x₁ = 
+  terminates vtrue 
+    (E-IsZero-Steps (E-If-Steps x₂ ++ [ E-If-False ] ++ x₁) ++ [ E-IsZeroZero ])
+termination (iszero (if t then t₁ else t₂)) | terminates vfalse x₂ | terminates (vnat (Succ x)) x₁ =
+  terminates vfalse 
+     (E-IsZero-Steps (E-If-Steps x₂ ++ [ E-If-False ] ++ x₁) ++ [ E-IsZeroSucc {vnat x} ])
+termination (iszero zero) = terminates vtrue (Cons E-IsZeroZero Nil)
+termination (iszero (succ t)) with termination t
+termination (iszero (succ t)) | terminates v x =
+   terminates vfalse (E-IsZero-Steps (E-Succ-Steps x) ++ [ E-IsZeroSucc {v} ])
+
+------------------------------------------------------------------------
+-- Big-step semantics.
+
+-- A different kind of representation for evaluation rules. 'a ⇓ b'
+-- denotes that a will evaluate to value b after a complete execution
+-- of the term.
+data _⇓_ {ty : Type} : Term ty → Value ty → Set where
+  
+
+
+-- Converstion from big- to small-step representations.
+big-to-small : ∀ {ty} {t : Term ty} {v : Value ty} → t ⇓ v → Steps t ⌜ v ⌝
+big-to-small p = {!!}
+
+-- Conversion from small- to big-step representations.
+value-to-value : forall {ty} (v : Value ty) -> ⌜ v ⌝ ⇓ v
+value-to-value = {!!}
+
+prepend-step : {ty : Type} -> (t t' : Term ty) (v : Value ty) → Step t t' -> t' ⇓ v → t ⇓ v
+prepend-step = {!!}
+
+small-to-big : {ty : Type} -> (t : Term ty) -> (v : Value ty) → Steps t ⌜ v ⌝ → t ⇓ v
+small-to-big t v steps = {!!}
+
+--------------------------------------------------------------------------------
+-- Relating denotational semantics and big-step semantics
+
+-- Prove completeness of the big-step semantics when using the
+-- evaluation function: each term should reduce to its evaluation.
+⇓-complete : ∀ {ty} (t : Term ty) → t ⇓ ⟦ t ⟧
+⇓-complete t = {!!}
+
+-- Prove soundness of the big-step semantics: when a term can be
+-- big-step evaluated to a value, this value should be the evaluation
+-- of that term.
+⇓-sound : ∀ {ty} (t : Term ty) (v : Value ty) → t ⇓ v → v == ⟦ t ⟧
+⇓-sound t v p = {!!}
 
 
 
