@@ -44,6 +44,7 @@ Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://resear
 
 
 #### Semantics of dynamically typed languages (WS)
+Falco Peijnenburg, Mark Lekkerkerker
 
 We have mainly considered *statically typed languages* in our lectures.
 
@@ -53,7 +54,7 @@ Check out: [Gideon Smeding's MSc thesis](http://gideon.smdng.nl/wp-content/uploa
 
 
 
-#### Verified compilers (WS)
+#### Verified compilers (WS) - Rob Spoel, Daniël Heres; Eduard van der Bent & Bert de Vreugd
 
 Given a mini-programming language, interpreter and compiler:
 
@@ -75,7 +76,7 @@ Graham Hutton's book, *Programming in Haskell*, shows how to prove such a compil
 
 
 
-#### Memory bank in PiWare (WS)
+#### Memory bank in PiWare (WS) - Frank Dedden and Sije Harkema
 
 PiWare is a DSL for hardware description implemented in Agda.
 
@@ -100,13 +101,15 @@ Recently Agda's reflection mechanism ('Template Agda') has been extended, making
 
 There is a large collection of 'functional pearls' – short examples of an elegant function solution to a (seemingly) difficult problem:
 
-  * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf)
+  * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf) - Marcell van Geest & Wilco Kusee
   * [The Gilbreath shuffle](http://yquem.inria.fr/~huet/PUBLIC/shuffle2.pdf)
   * ...
 
 **Project:** Can you implement these pearls in Agda and prove that they are correct?
 
 #### Datatype refinement (JJ)
+
+Olli Linna and Rick Klomp
 
 Given a datatype, construct its refinement rules. For example,
 
@@ -138,6 +141,7 @@ types listed on the materials page are useful here.
 Can I relate this to Bayesian networks?
 
 ####￼Strategy datatypes (JJ)
+Niels Steenbergen and Andreas Franz
 
 Given a strategy for solving a problem, constructing a proof, construct a
 datatype for representing instances of the strategy. See [Specifying rewrite
@@ -148,6 +152,7 @@ The result is a generic function with a datatype as result. Again associated
 types?
 
 ####￼Datatype equality (JJ)
+Erik van der Kramer en Morten Asscheman
 
 Generic equality is used a lot.
 
