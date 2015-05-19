@@ -141,6 +141,7 @@ types listed on the materials page are useful here.
 Can I relate this to Bayesian networks?
 
 ####￼Strategy datatypes (JJ)
+Niels Steenbergen and Andreas Franz
 
 Given a strategy for solving a problem, constructing a proof, construct a
 datatype for representing instances of the strategy. See [Specifying rewrite
