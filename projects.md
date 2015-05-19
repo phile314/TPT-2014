@@ -103,7 +103,7 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
   * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf) - Marcell van Geest & Wilco Kusee
   * [The Gilbreath shuffle](http://yquem.inria.fr/~huet/PUBLIC/shuffle2.pdf)
-  * ...
+  * Properties of regular expressions - Renate Eilers & Yfke Dulek
 
 **Project:** Can you implement these pearls in Agda and prove that they are correct?
 
