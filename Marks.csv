@@ -4,7 +4,7 @@ e.g. '7.5' for, for fractional marks, rather than '7,5' which may be
 interpreted incorrectly.
 
 Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's mark Exc 2, Own Mark Exc 3, Reviewer's mark Exc 3
-3361063,
+3361063, , 9.5
 3583600, 9,
 3631230, , 4.5
 3677842,
@@ -25,5 +25,5 @@ Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's m
 5564050,
 F133012,
 F133216,
-F142001,
+F142001, 10, 
 
