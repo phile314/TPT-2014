@@ -44,7 +44,6 @@ Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://resear
 
 
 #### Semantics of dynamically typed languages (WS)
-Falco Peijnenburg, Mark Lekkerkerker
 
 We have mainly considered *statically typed languages* in our lectures.
 
@@ -109,7 +108,8 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
 #### Datatype refinement (JJ)
 
-Olli Linna and Rick Klomp
+Olli Linna and Rick Klomp;
+Falco Peijnenburg, Mark Lekkerkerker
 
 Given a datatype, construct its refinement rules. For example,
 
