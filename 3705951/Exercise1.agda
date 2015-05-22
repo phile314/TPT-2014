@@ -20,8 +20,6 @@ data Nat : Set where
   Succ : Nat -> Nat
 
 {-# BUILTIN NATURAL Nat #-}
-{-# BUILTIN ZERO Zero #-}
-{-# BUILTIN SUC Succ #-}
 
 _+_ : Nat -> Nat -> Nat
 Zero + m = m
