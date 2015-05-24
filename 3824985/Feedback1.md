@@ -2,9 +2,9 @@
 
 Exercise|  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9 
   ---   |-----|-----|-----|-----|-----|-----|-----|-----|-----
-        |  1  | 0.6 |  1  |  1  |  1  |  1  |  1  |  1  |  1
+        |  1  | 0.6 |  1  |  1  |  1  |  1  | 1.2 |  1  |  1
 
-Total: 1 + 8.6 = **9.6**
+Total: 1 + 8.8 = **9.8**
 
 ###Exercise 1 
 Consice formulation for vmap. Imaginary bonus points for giving proof that the 
@@ -29,7 +29,7 @@ Practically the same solution as Wouter.
 Looks good.
 
 ###Exercise 7 (Peirce's law)
-Great, as far as I understand it.
+Great, as far as I understand it. +0.2 bonus.
 
 ###Exercise 8 (LEQ)
 Same as Wouter's solution.
