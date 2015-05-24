@@ -44,7 +44,6 @@ Check out: Simon Peyton Jones's paper [Tackling the Awkward Squad](http://resear
 
 
 #### Semantics of dynamically typed languages (WS)
-Falco Peijnenburg, Mark Lekkerkerker
 
 We have mainly considered *statically typed languages* in our lectures.
 
@@ -103,13 +102,14 @@ There is a large collection of 'functional pearls' – short examples of an eleg
 
   * [Sudoku solver](http://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf) - Marcell van Geest & Wilco Kusee
   * [The Gilbreath shuffle](http://yquem.inria.fr/~huet/PUBLIC/shuffle2.pdf)
-  * ...
+  * Properties of regular expressions - Renate Eilers & Yfke Dulek
 
 **Project:** Can you implement these pearls in Agda and prove that they are correct?
 
 #### Datatype refinement (JJ)
 
-Olli Linna and Rick Klomp
+Olli Linna and Rick Klomp;
+Falco Peijnenburg, Mark Lekkerkerker
 
 Given a datatype, construct its refinement rules. For example,
 
