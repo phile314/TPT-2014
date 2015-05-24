@@ -366,7 +366,7 @@ termination (iszero (succ t)) | terminates v x =
 -- A different kind of representation for evaluation rules. 'a ⇓ b'
 -- denotes that a will evaluate to value b after a complete execution
 -- of the term.
-data _⇓_ {ty : Type} : Term ty → Value ty → Set where
+data _⇓_ : {ty : Type} -> Term ty → Value ty → Set where
   
 
 
