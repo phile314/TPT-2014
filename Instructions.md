@@ -22,7 +22,6 @@ these operations cause an overflow, wrap around from the top.
 * 3821382
 * 3824985
 * 3873994
-* 3942953
 * 4158334
 * 5534941
 * 5540232
