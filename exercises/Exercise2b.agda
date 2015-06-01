@@ -172,29 +172,27 @@ normalizableStep = {!!}
 normalizableSteps : forall {ty} -> {c1 c2 : Closed ty} -> Steps c1 c2 -> Normalizable ty c2 -> Normalizable ty c1
 normalizableSteps steps n = {!!}
 
--- An environment is always normalizable
-normalizable-env : forall {ctx : Context} {env : Env ctx} -> NormalizableEnv env
-normalizable-env = {!!}
-
 -- The following three lemmas may use mutual recursion. This is done
 -- in Agda by separating the type signature and the function
 -- definition.
 
--- Closed applications of the form 'f x' are normalizable when both f and x are normalizable.
-clapp-normalization : forall {A B} -> {c1 : Closed (A => B)} -> {c2 : Closed A} -> 
-                       Normalizable (A => B) c1  -> Normalizable A c2 -> Normalizable B (Clapp c1 c2)
+mutual
+  -- Closed applications of the form 'f x' are normalizable when both f and x are normalizable.
+  clapp-normalization : forall {A B} -> {c1 : Closed (A => B)} -> {c2 : Closed A} -> 
+                         Normalizable (A => B) c1  -> Normalizable A c2 -> Normalizable B (Clapp c1 c2)
+  clapp-normalization = {!!}
+  -- All closure terms are normalizable.
+  closure-normalization : forall {ctx} -> (ty : Type) -> (t : Term ctx ty) -> (env : Env ctx) -> 
+   NormalizableEnv env -> Normalizable ty (Closure t env)
+  closure-normalization = {!!}
 
--- All closure terms are normalizable.
-closure-normalization : forall {ctx} -> (ty : Type) -> (t : Term ctx ty) -> (env : Env ctx) -> 
- NormalizableEnv env -> Normalizable ty (Closure t env)
+  -- An environment is always normalizable
+  normalizable-env : forall {ctx : Context} {env : Env ctx} -> NormalizableEnv env
+  normalizable-env = {!!}
 
-closure-normalization = {!!}
-
-clapp-normalization = {!!}
-
--- All terms are normalizable.
-normalization : (ty : Type) -> (c : Closed ty) -> Normalizable ty c
-normalization ty c = {!!}
+  -- All terms are normalizable.
+  normalization : (ty : Type) -> (c : Closed ty) -> Normalizable ty c
+  normalization ty c = {!!}
 
 termination : (ty : Type) -> (c : Closed ty) -> Terminates c
 termination ty c = {!!}

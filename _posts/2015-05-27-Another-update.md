@@ -1,0 +1,1 @@
+I've made a small change to [Exercise 2b](https://github.com/wouter-swierstra/TPT-2014/blob/gh-pages/exercises/Exercise2b.agda) – the lemma `normalizable-env` needs to be defined mutually with several others. 
