@@ -1,0 +1,1 @@
+I've uploaded the [Exercise set on generic programming](https://github.com/wouter-swierstra/TPT-2014/blob/gh-pages/exercises/genericProgrammingExercises.pdf). Deadline for submission of solutions is June 17. 
