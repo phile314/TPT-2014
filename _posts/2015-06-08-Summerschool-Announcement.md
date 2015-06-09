@@ -1,0 +1,1 @@
+If you want to spend a week in the summer learning more about some of the topics discussed in this course: visit the [SUMMER SCHOOL ON GENERIC AND EFFECTFUL PROGRAMMING](http://www.cs.ox.ac.uk/projects/utgp/school/) in Oxford.
