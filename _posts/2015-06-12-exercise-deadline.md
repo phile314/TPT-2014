@@ -1,0 +1,1 @@
+I have changed the submit deadline for the generic programming exercise set to June 19 (as was mentioned on the schedule already).
