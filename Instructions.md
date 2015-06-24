@@ -53,3 +53,4 @@ There are 9 parts to the exercise. Each part is worth 1 point. The
 total score is the sum of these parts + 1. You may want to add 0.2 if
 someone has successfully tackled the bonus question regarding Pierce's
 law, but no mark should be higher than a 10.
+
