@@ -5,7 +5,7 @@ interpreted incorrectly.
 
 Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's mark Exc 2, Own Mark Exc 3, Reviewer's mark Exc 3
 3361063, 9.5, 9.5 , , 9 ,
-3583600, 9,   8 , 7.5 , , 7
+3583600, 9,   8 , 7.5 , , 7 , 6
 3677842, 9, 8.4, 8, 
 3698475, 8, 7.5 , , 2
 3701441, 7.5 , 8, 0 , , , 7
@@ -19,6 +19,6 @@ Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's m
 4158334, 9, 9, 5, 4.5
 5534941, 8.0, 7.9, 10 , 9.8
 5540232, 7.5, 8.5, 7.5, 7.5, , 5.8
-F133012, 9.75 , 10 , 9 , 10
+F133012, 9.75 , 10 , 9 , 10 , 8.5 ,
 F133216, , 2.7
 F142001, 10, , , 10
