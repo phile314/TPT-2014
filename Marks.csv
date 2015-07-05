@@ -4,9 +4,9 @@ e.g. '7.5' for, for fractional marks, rather than '7,5' which may be
 interpreted incorrectly.
 
 Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's mark Exc 2, Own Mark Exc 3, Reviewer's mark Exc 3
-3361063, 9.5, 9.5 , , 9 , 9.2
+3361063, 9.5, 9.5, 9.2, 9 , ?, 9.2
 3583600, 9,   8 , 7.5 , , 7 , 6
-3677842, 9, 8.4, 8, 
+3677842, 9, 8.4, 8, 7.8
 3698475, 8, 7.5 , , 2
 3701441, 7.5 , 8, 0 , , , 7
 3705269, 3, 3.5, 3, 3
