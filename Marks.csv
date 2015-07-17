@@ -1,7 +1,7 @@
 Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's mark Exc 2, Own Mark Exc 3, Reviewer's mark Exc 3
 3361063, 9.5 , 9.5, 9.2 , 9  , 9  , 9.2
-3583600, 9   ,   8, 7.5 ,    , 7  , 6
-3677842, 9   , 8.4, 8   , 7.8, 8.5,
+3583600, 9   ,   8, 7.5 , 6.5, 7  , 6
+3677842, 9   , 8.4, 8   , 7.8, 8.5, 8.5
 3698475, 8   , 7.5,     ,    , 2  , 3
 3701441, 7.5 , 8  , 0   ,    ,    , 7
 3705269, 3   , 3.5, 3   , 3  ,    , 7
@@ -16,4 +16,4 @@ Studentnumber, Own mark Exc1, Reviewer's mark Exc1, Own Mark Exc 2, Reviewer's m
 5540232, 7.5 , 8.5, 7.5 , 7.5, 5.8, 5.8
 F133012, 9.75, 10 , 9   , 10 , 8.5, 9
 F133216,     , 2.7,     ,    ,    ,
-F142001, 10  ,    ,     , 10 ,    , 10
+F142001, 10  ,    , 10  , 10 , 10 , 10
